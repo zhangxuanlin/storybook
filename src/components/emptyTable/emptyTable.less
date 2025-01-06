@@ -1,0 +1,50 @@
+@link-color: #4c70ff;
+@hover-color: #8099ff;
+@focus-color: #4465e6;
+@color-disable: #BFBFBF;
+
+.empty-table {
+    color: @color-disable;
+    //position: relative;
+    //height: calc(100vh - 510px);
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-noresult-img {
+        height: fit-content;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img,
+        svg {
+            max-width: 200px;
+        }
+    }
+
+    &-description {
+        margin-top: 8px;
+        color: @color-disable;
+        text-align: center;
+    }
+
+    &-reset {
+        cursor: pointer;
+        text-decoration: none;
+        color: @link-color;
+
+        &:hover {
+            color: @hover-color;
+        }
+
+        &:focus {
+            color: @focus-color;
+        }
+    }
+}
